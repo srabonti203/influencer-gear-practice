@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --primary-colour: rgba(58, 58, 58, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* shared */
+body {
+  font-family: var(--primary-font);
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 1);
+}
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-colour);
+}
+/* header section styles */
+/* navbar styles */
+nav {
+  justify-content: space-between;
+  margin: 5.4rem 7.5rem 4.44rem 7.5rem;
+  gap: 30.9rem;
+}
+.logo {
+  color: var(--primary-colour);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+.links {
+  gap: 2.125rem;
+  cursor: pointer;
+}
+/* main section styles */
+/* banner styles */
+.banner {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 8.3rem;
+  margin-bottom: 4.3125rem;
+}
+.banner-text h1 {
+  color: var(--primary-colour);
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+}
+.b-pera {
+  color: var(--primary-colour);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+.btn {
+  text-align: center;
+  width: 12.25rem;
+  padding: 0.625rem 1.5rem;
+  border-radius: 2.6rem;
+  background: rgba(224, 44, 109, 1);
+  color: white;
+  margin-top: 1rem;
+  border: none;
+}
+.banner-image {
+  background-image: url("./images/Circle\ design.svg");
+  background-position: center;
+  background-size: cover;
+}
+.banner-image img {
+  width: 100%;
+}
+/* company logo   styles */
+/* popular collection   styles */
+/* featured products   styles */
+/* footer section styles */
+/* footer text stles */
+/* footer icon */
+
+@media screen and (max-width: 576px) {
+  /* header section styles */
+  /* navbar styles */
+  nav {
+    flex-direction: column;
+    margin: 2.2rem 1rem 3.44rem 1rem;
+    gap: 1.9rem;
+  }
+  .links {
+    flex-direction: column;
+    gap: 1.125rem;
+  }
+  li {
+    text-align: center;
+    width: 5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  /* main section styles */
+  /* banner styles */
+  .banner {
+    flex-direction: column-reverse;
+    padding: 0 2rem;
+    gap: 0.875rem;
+    margin-bottom: 3.3125rem;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-text h1 {
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+  }
+  .b-pera {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.312rem;
+    margin-top: 0.9rem;
+  }
+  /* company logo   styles */
+  /* popular collection   styles */
+  /* featured products   styles */
+  /* footer section styles */
+  /* footer text stles */
+  /* footer icon */
+}
